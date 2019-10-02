@@ -38,7 +38,6 @@ def read_losses(path):
         Function for reading and merging training and validation losses from training using Weight Share
     """
     with open(os.path.join(path,"losses.pkl"),"rb") as f:
-#        LOSSES_TRAIN_small,LOSSES_TRAIN_2019,LOSSES_VAL = pickle.load(f)
         files = pickle.load(f)
     out = []
     for file in files:
@@ -49,21 +48,4 @@ def read_losses(path):
                 d[key].append(val)
         
         out.append(d)
-#    losses_train_small = {key:[] for key in LOSSES_TRAIN_small[0]}
-#    losses_train_2019 = {key:[] for key in LOSSES_TRAIN_2019[0]}
-#    losses_val = {key:[] for key in LOSSES_VAL[0]}
-#            
-#    for counter,dictionary in enumerate(LOSSES_TRAIN_small):
-#        for key,val in dictionary.items():
-#            losses_train_small[key].append(val)
-#            
-#    for counter,dictionary in enumerate(LOSSES_TRAIN_2019):
-#        for key,val in dictionary.items():
-#            losses_train_2019[key].append(val)
-#            
-#    for counter,dictionary in enumerate(LOSSES_VAL):
-#        for key,val in dictionary.items():
-#            losses_val[key].append(val)        
-#
-#    return losses_train_small, losses_train_2019, losses_val
     return out
