@@ -1,4 +1,4 @@
-# Weight-Share
+# Weight Share
 Demonstration of using Weight Share for training deep CNN's.
 
 Deep learning has been popularized through its ability to achieve better than human performance in tasks like vision. However, in order to train these deep neural nets (typically CNN's), several data sets has been collected and merged into one. In the merging process, the images are resized to the same shape.
