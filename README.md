@@ -8,4 +8,4 @@ Weigth Share is a novel method for training deep CNN's on multiple data set with
 
 The demonstration is based on the paper "Deep learning for Chemometric and non-translational data by Larsen,J.S. and Clemmensen, L. (2019)". https://arxiv.org/abs/1910.00391
 
-The demonstration is developed using Python 3.6 and Tensorflow 1.12
+The code is developed using Python 3.6 and Tensorflow 1.12
